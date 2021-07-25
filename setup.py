@@ -75,7 +75,7 @@ module = setuptools.Extension(
     include_dirs=include_dirs,
     language="c++",
     # TODO: -m64 may break 32 bit builds
-    extra_compile_args=["-w", "-O2", "-m64", "-fPIC"],
+    extra_compile_args=["-w", "-O2", "-fPIC"],
 )
 
 # We define version as PYCLD2_VERSION in the C++ module.
